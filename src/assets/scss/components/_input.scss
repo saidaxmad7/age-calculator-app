@@ -1,0 +1,72 @@
+.inputs {
+    margin-bottom: 24px;
+    &-form {
+        display: flex;
+        gap: 24px;
+    }
+    &-group {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        label {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #666;
+        }
+
+        input {
+            width: 90px;
+            height: 56px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 24px;
+            font-weight: 800;
+            padding: 0 12px;
+            outline: none;
+        }
+
+        input::placeholder {
+            color: #aaa;
+        }
+
+        input:focus {
+            border-color: $purple-500;
+        }
+        &:last-child input {
+            width: 120px;
+        }
+    }
+
+    &-submit {
+        position: relative;
+        margin-top: 32px;
+        display: flex;
+        align-items: center;
+    }
+
+    &-line {
+        width: 100%;
+        height: 1px;
+        background-color: $grey-200;
+    }
+
+    &-submit button {
+        position: absolute;
+        right: 0;
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        background-color: $purple-500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    &-submit button img {
+        width: 24px;
+        height: 24px;
+    }
+}

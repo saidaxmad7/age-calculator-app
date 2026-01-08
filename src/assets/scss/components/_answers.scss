@@ -1,0 +1,20 @@
+.answer {
+        margin: 0;
+
+    &-item {
+        @include flex(center,none);
+        gap: 12px;
+
+        &-line {
+            color: $purple-500;
+            font-size: 40px;
+            letter-spacing: 6px;
+            font-weight: 900;
+        }
+
+        &-text {
+            font-size: 50px;
+            margin: 0;
+        }
+    }
+}
